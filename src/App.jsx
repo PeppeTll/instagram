@@ -1,25 +1,29 @@
 import { useState } from "react";
 import "./App.css";
 
-import { storiesData } from "./mocks/stories";
-import { userData } from "./mocks/user";
-import { postsData } from "./mocks/posts";
-
 // components
+import Home from "./components/Home";
 import TopBar from "./components/TopBar";
-import Stories from "./components/Stories";
-import Posts from "./components/Posts";
+import Camera from "./components/Camera";
+import Messaggi from "./components/Messaggi";
 
 function App() {
-	const [stories, setStories] = useState(storiesData);
-	const [user, setUser] = useState(userData);
-	const [posts, setPosts] = useState(postsData);
+	const [section, setSection] = useState("home");
 
+	const onSectionRender = () => {
+		switch (section) {
+			case "home":
+				return <Home />;
+			case "camera":
+				return <Camera />;
+			case "message":
+				return <Messaggi />;
+		}
+	};
 	return (
 		<>
-			<TopBar />
-			<Stories user={user} stories={stories} />
-			<Posts posts={posts} />
+			<TopBar setSection={setSection} />
+			{onSectionRender()}
 		</>
 	);
 }

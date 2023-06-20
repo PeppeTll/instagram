@@ -1,3 +1,15 @@
+.blue {
+  color: rgba(0, 0, 255, 0.805);
+  font-size: 0.8rem;
+
+}
+
+.Post {
+  padding: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
 .PostTop {
   position: relative;
   background-color: #ffffff;
@@ -8,6 +20,21 @@
   padding: 12px;
 }
 
+.PostTop__caption {
+  position: relative;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.PostTop__caption::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: -5px;
+  left: -10px;
+  border: 1px solid rgba(0, 0, 0, 0.431);
+}
+
 .PostTop__User {
   position: relative;
   display: flex;
@@ -16,11 +43,12 @@
 }
 
 .User__Image {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  aspect-ratio: 1;
   border-radius: 100%;
   overflow: hidden;
   position: relative;
+  border: 1px solid black;
 }
 
 .User__Image img {
@@ -31,15 +59,11 @@
 
 .User__Username {
   font-weight: bold;
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
+  font-size: 1rem;
 }
 
 .User__Location {
-  margin: 0;
-  padding: 0;
-  font-size: 11px;
+  font-size: 0.8rem;
 }
 
 .PostContent {
@@ -49,10 +73,20 @@
 
 .PostContent img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
 }
 
 .PostActions {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 12px;
+}
+
+.Post__saved {
+  font-size: 1.5rem;
 }
