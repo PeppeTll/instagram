@@ -1,7 +1,6 @@
 .Conversation {
   width: 100%;
   height: 100%;
-  border: 1px solid red;
   z-index: 10;
   position: absolute;
   top: 0;
