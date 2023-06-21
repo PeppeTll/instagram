@@ -18,7 +18,6 @@ const Messaggi = () => {
 			{messages.map((message) => (
 				<MessagePrev key={message.id} message={message} />
 			))}
-			;
 		</div>
 	);
 };

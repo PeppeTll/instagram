@@ -1,0 +1,11 @@
+.Messaggi {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  padding: 12px;
+  gap: 15px;
+  width: 100dvw;
+  height: calc(100dvh - 54px);
+  position: relative;
+}
