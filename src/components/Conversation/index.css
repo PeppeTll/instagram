@@ -6,10 +6,12 @@
   top: 0;
   bottom: 0;
   left: 0;
+  padding: 10px;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: end;
+  gap: 10px;
 }
 
 .read {
@@ -17,6 +19,7 @@
 }
 
 .Conversation__chat {
+  margin-right: 20%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -28,6 +31,7 @@
 }
 
 .sender {
+  margin-left: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;

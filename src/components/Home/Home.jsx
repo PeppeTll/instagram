@@ -10,10 +10,10 @@ import Posts from "../Posts";
 
 const Home = () => {
 	const [stories, setStories] = useState(storiesData);
-	const [post, setPost] = useState(null);
+	const [post, setPost] = useState([]);
 
 	useEffect(() => {
-		fetch("https://api.npoint.io/42312e257d95fa41ddd3")
+		fetch("https://api.npoint.io/3b5616ee4554bb93a8d3")
 			.then((res) => res.json())
 			.then((data) => setPost(data));
 	}, []);

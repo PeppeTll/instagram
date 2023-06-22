@@ -1,0 +1,22 @@
+.App {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .App {
+    max-width: 390px;
+    max-height: 844px;
+    overflow-y: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .App::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -7,7 +7,7 @@ const Posts = ({ post }) => {
 		<div>
 			<ul>
 				{post?.map((post) => (
-					<li key={post?.id}>
+					<li key={post?.post_id}>
 						<Post post={post} />
 					</li>
 				))}

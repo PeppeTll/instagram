@@ -6,7 +6,6 @@ import { CameraIcon, IGTVIcon, LogoIcon, MessangerIcon } from "../../icons";
 const TopBar = ({ setSection }) => {
 	const onHandleClick = (section) => {
 		setSection(section);
-		console.log(section);
 	};
 	return (
 		<div className="TopBar">
