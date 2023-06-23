@@ -1,6 +1,6 @@
 .AboutSelf {
-  margin: 54px 0;
   padding: 0 10px;
+  height: calc(100% - 105px);
 }
 
 .AboutSelf__avatar {
